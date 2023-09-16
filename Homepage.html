@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head> 
+                <title>MedVoyage</title>
+                <!-- <link rel= type= href= /> -->
+
+                <meta charset="UTF-8">
+                <meta name="description" content="Medical Diagnosis">
+                <meta name="keywords" content="Medical Diagnosis">
+                <meta name="author" content="Diego Martinez, Khalil Peguero, Christian">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+                <link rel="stylesheet" href="style.css">
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+        </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="MedVoyage.png"></a>
+      <ul>
+        <li><a href="#">Homepage</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#"><button id="contacts-btn">Contact Us</button></a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="background.png" id="background">
+      <img src="sun.png" id="sun">
+      <img src="layer.png" id="layer">
+      <h2 id="text">Your Health, Our Expertise: Precision Diagnoses, Peace of Mind!</h2>
+      <a href="#sec" id="btn">Earn your peace of mind today</a>
+    </section>
+    <div class="sec" id="sec">
+        <h2>About Us</h2>
+        <p>At MedVoyage, we are dedicated to revolutionizing the way you approach
+                healthcare. Our mission is to empower individuals with the knowledge 
+               and insights they need to take control of their well-being. 
+               With a team of dedicated medical experts and cutting-edge technology, 
+               we provide accurate and reliable medicinal diagnoses right from the comfort of your home.</p>
+    </div>
+    <script>
+      let = document.getElementById('background');
+      let sun = document.getElementById('sun');
+      let = document.getElementById('layer');
+      let text = document.getElementById('text');
+      let btn = document.getElementById('btn');
+
+      window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        layer.style.left = value*1.5+'px';
+
+      })
+    </script>
+  </body>     
+</html>
