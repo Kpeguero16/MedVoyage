@@ -141,5 +141,40 @@ button:hover {
   margin-bottom:10px;
   color:#fff
 }
+#no{
+  color: white;
+  font-family:"Poppins", sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease 0s;
+  padding: 10px 25px;
+  background-color:#000000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-style: color= #FFFFFF;
+  font-size: large;
+}
+#no:hover{
+  background-color: #5271ff;
+}
+#yes{
+  color: white;
+  font-family:"Poppins", sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease 0s;
+  padding: 10px 25px;
+  background-color:#000000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-style: color= #FFFFFF;
+  font-size: large;
+  gap:80px
+}
+#yes:hover{
+  background-color: #5271ff;
+}
 
 
