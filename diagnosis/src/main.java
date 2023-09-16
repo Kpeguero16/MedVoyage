@@ -1,10 +1,22 @@
+package diagnosis.diagnosis.src;
+
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
+        // Initialize the scanner in the main function
         Scanner input = new Scanner(System.in);
-        Rabies rabies = new Rabies();
+        /*
+            How the program will function.
+            1. The program will ask the user a question
+            2. The program will store the input into a variable
+            3. The variable is used to run an if statement.
+            4. Repeat
+            5. At the end of this loop, the function will return a diagnosis.
+         */
+
         System.out.println("Do you have flu-like symptoms?");
+
 
         String hasFluLikeSymptoms = input.nextLine();
 
@@ -15,11 +27,18 @@ public class main {
                 System.out.println("You have rabies");
             } else if(bubonicPlague.checkForBubonicPlague()) {
                 System.out.println("You have the plague");
+            } else if(Ebola.checkForEbola()) {
+                System.out.println("You have Ebola.");
+            } else {
+                System.out.println("You have the flu");
+            }
+        } else {
+            if(lactoseIntolerance.checkForLactoseIntolerance())
+            {
+                System.out.println("You have lactose Intolerance");
             } else {
                 System.out.println("Seek medical assistance");
             }
-        } else {
-            System.out.println("Seek medical assistance");
         }
     }
 }

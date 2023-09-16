@@ -1,3 +1,5 @@
+package diagnosis.diagnosis.src;
+
 public class Disease {
     private String[] symptoms;
     private String name;

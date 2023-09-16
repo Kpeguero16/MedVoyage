@@ -1,3 +1,5 @@
+package diagnosis.diagnosis.src;
+
 import java.util.Scanner;
 
 public class Rabies extends Disease {
@@ -8,6 +10,7 @@ public class Rabies extends Disease {
         super("Rabies", rabiesSymptoms);
     }
 
+    // Refer to the comment on main for information
     public static boolean checkForRabies() {
         Scanner input = new Scanner(System.in);
         System.out.println("Are you experiencing hallucinations?");
