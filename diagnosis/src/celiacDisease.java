@@ -7,6 +7,7 @@ public class celiacDisease extends Disease{
         super("Celiac Disease", celiacSymptoms);
     }
 
+    // Refer to the comment on main for information
     public static boolean checkForCeliacDisease()
     {
         Scanner input = new Scanner(System.in);

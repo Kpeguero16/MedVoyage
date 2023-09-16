@@ -42,10 +42,25 @@ public class Main {
                 } else if(celiacDisease.checkForCeliacDisease()){
                     System.out.println("You have celiac disease");
                 } else {
-                    System.out.println("Seek medical assistance");
+                    System.out.println("You have a stomach bug. Seek medical assistance for more information.");
                 }
             } else {
-                System.out.println("Seek medical assistance");
+                System.out.println("Do you have chest pain?");
+                String hasChestPain = input.nextLine();
+                if(hasChestPain.equals("yes"))
+                {
+                    if(GERD.checkForGERD())
+                    {
+                        System.out.println("You have GERD.");
+                    } else if(Angina.checkForAngina())
+                    {
+                        System.out.println("You have Angina");
+                    } else {
+                        System.out.println("You have chests pains. There are many causes of chest pains, so seek medical advice.");
+                    }
+                } else {
+                    System.out.println("You might be fine. Feel free to seek medical information if needed.");
+                }
             }
         }
     }
