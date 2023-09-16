@@ -1,0 +1,33 @@
+html{
+    text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+img{
+    height:75px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.border{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.textBox{
+    height: 400px;
+    width: 400px;
+
+    margin: 0 auto;
+    margin-top: 5%;
+
+    overflow: scroll;
+}
