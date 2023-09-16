@@ -35,7 +35,7 @@ public class Main {
         } else {
             System.out.println("Do you feel gastrointestinal pain?");
             String hasGastroPain = input.nextLine();
-            if(hasGastroPain.equals("Yes"))
+            if(hasGastroPain.equals("yes"))
             {
                 if(lactoseIntolerance.checkForLactoseIntolerance()) {
                     System.out.println("You have lactose Intolerance");
