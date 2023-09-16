@@ -1,3 +1,5 @@
+package diagnosis.diagnosis.src;
+
 import java.util.Scanner;
 
 public class bubonicPlague extends Disease{
@@ -8,6 +10,7 @@ public class bubonicPlague extends Disease{
         super("Bubonic Plague", bubPlagueSymptoms);
     }
 
+    // Refer to the comment on main for information
     public static boolean checkForBubonicPlague()
     {
         Scanner input = new Scanner(System.in);
