@@ -1,27 +1,27 @@
 const diagnosisTree = {
-    question: " Are you experiencing flu-like symptoms? ",
+    question: " Have you been experiencing flu-like symptoms? ",
     yes: {
-        question: " Are you experiencing hallucinations? ",
+        question: " Have you been experiencing hallucinations? ",
         yes: {
             question: " Does your throat burn when you drink water? ",
             yes: {
-                result: "Rabies"
+                result: "You may have Rabies"
             },
             no: {
                 result: "Seek medical help"
             }
         },
         no: {
-            question: " Do you inflated buboes? ",
+            question: " Have you experienced one or more swollen, painful lymph nodes? ",
             yes: {
-                result: "Plague"
+                result: "You may have the Plague"
             },
             no: {
-                question: " Do you have gastrointestinal issues? ",
+                question: " Have you experienced any gastrointestinal issues? ",
                 yes: {
-                    question: " Bleeding? ",
+                    question: " Any unexplanied bleeding or bruising? ",
                     yes: {
-                        result: "Ebola"
+                        result: "You may have Ebola"
                     },
                     no: {
                         result: "Seek medical help"
