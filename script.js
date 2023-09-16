@@ -1,39 +1,47 @@
-function update(){
-    let textBox = document.querySelector("#textBox");
-    let chatBox = document.getElementById("chatBox");
+const diagnosis = {
+    question: " Are you experiencing flu-like symptoms? ",
+    yes: {
+        question: " Are you experiencing hallucinations? ",
+        yes: {
+            question: " Does your throat burn when you drink water? ",
+            yes: {
+                // Rabies
+            },
+            no: {
+                // Seek medical help
+            }
+        },
+        no: {
+            question: " Do you inflated buboes? ",
+            yes: {
+                // Plague
+            },
+            no: {
+                question: " Do you have gastrointestinal issues? ",
+                yes: {
+                    question: " Bleeding? ",
+                    yes: {
+                        // Ebola 
+                    },
+                    no: {
+                        //seek medical assistance
+                    }
+                },
+                no: {
+                    // Seek medical help
+                }
+            }
+        }
+    },
+    no: {
 
-    let input = textBox.value.toLowerCase();
-    let current = chatBox.innerHTML;
-
-    if(input == 'y' || input == 'yes')
-    {
-        current += "<p>You have flu-like symptoms</p><br>";
-        chatBox.innerHTML = current;
-    } 
-    else if(input == 'n' || input == 'no')
-    {
-        current += "<p>You don't have flu-like symptoms</p><br>";
-        chatBox.innerHTML = current;
     }
-    else if(input != "")
-    {
-        chatBox.innerHTML = current + "<p>Invalid input</p>";
-    } 
-    else
-    {
-        chatBox.innerHTML = current + "<p>Empty Textbox</p>";
-    } 
+};
 
-    textBox.scrollTop = textBox.scrollHeight;
+const yesButton = document.getElementById("yes");
+const noButton = document.getElementById("no");
 
-    textBox.value = "";
+function update(answer){
+    
 }
-
-function flu_like(){
-
-}
-function not_flu_like(){
-
-}
-
 
