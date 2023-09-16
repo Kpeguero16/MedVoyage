@@ -33,9 +33,17 @@ public class Main {
                 System.out.println("You have the flu");
             }
         } else {
-            if(lactoseIntolerance.checkForLactoseIntolerance())
+            System.out.println("Do you feel gastrointestinal pain?");
+            String hasGastroPain = input.nextLine();
+            if(hasGastroPain.equals("yes"))
             {
-                System.out.println("You have lactose Intolerance");
+                if(lactoseIntolerance.checkForLactoseIntolerance()) {
+                    System.out.println("You have lactose Intolerance");
+                } else if(celiacDisease.checkForCeliacDisease()){
+                    System.out.println("You have celiac disease");
+                } else {
+                    System.out.println("Seek medical assistance");
+                }
             } else {
                 System.out.println("Seek medical assistance");
             }

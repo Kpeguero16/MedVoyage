@@ -13,18 +13,13 @@ public class lactoseIntolerance extends Disease{
     public static boolean checkForLactoseIntolerance()
     {
         Scanner input = new Scanner(System.in);
-        System.out.println("Do you feel " + lactoseSymptoms[0] + "?");
-        String hasPain = input.nextLine();
-
-        if(hasPain.equals("yes"))
-        {
             System.out.println("Did you consume a dairy product?");
             String drankLactose = input.nextLine();
             if (drankLactose.equals("yes"))
             {
                 return true;
             }
-        }
+
         return false;
     }
 }
