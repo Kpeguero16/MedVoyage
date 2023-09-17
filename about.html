@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedVoyage | About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="Images/MedVoyage.png"></a>
+        <ul>
+          <li><a href="#">Homepage</a></li>
+          <li><a href="#chatbot">Service</a></li>
+          <li><a href="#sec">About Us</a></li>
+          <li><a href="#"><button id="contacts-btn">Contact Us</button></a></li>
+        </ul>
+      </header>
+
+      
+      <section>
+        <img src="Images/background.png" id="background">
+        <img src="Images/sun.png" id="sun">
+        <img src="Images/layer.png" id="layer">
+
+
+
+        <div class="Creators">
+            <div>
+
+            </div>
+            
+            <div>
+
+            </div>
+
+            <div>
+
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+
+
+
+      </section>
+
+
+      <script>
+        let = document.getElementById('background');
+        let sun = document.getElementById('sun');
+        let = document.getElementById('layer');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+  
+  
+        window.addEventListener('scroll', function(){
+          let value = window.scrollY;
+          layer.style.left = value*1.5+'px';
+          header.style.top = value*.5+'px';
+  
+        })
+      </script>
+</body>
+</html>

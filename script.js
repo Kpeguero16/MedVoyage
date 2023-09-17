@@ -34,7 +34,43 @@ const diagnosisTree = {
         }
     },
     no: {
-        result: "Seek medical help."
+        question: " Have you experienced any gastrointestinal issues? ",
+        yes: {
+            question: " Have you consumed Dairy in the last 12 hours? ",
+            yes: {
+                result: "You may be Lactose Intolerant."
+            },
+            no: {
+                questions: " Have you consumed Grain products recently? ",
+                yes: {
+                    result: " You may have Celiac Disease. "
+                },
+                no: {
+                    result: " You may have a stomach bug. "
+                }
+            }
+        }, 
+        no: {
+            question: " Have you experienced any chest pain? ",
+            yes: {
+                question: " Have you experienced acid reflux? ",
+                yes: {
+                    result: " You may have GERD. "
+                },
+                no: {
+                    result: " Seek medical help. "
+                }
+            },
+            no: {
+                question: " Have you experienced any shortness of breath? ",
+                yes: {
+                    result: " You may have Angina. "
+                },
+                no: {
+                    result: " Seek medical help"
+                }
+            }
+        }
     }
 };
     let currentNode = diagnosisTree;
