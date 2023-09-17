@@ -53,10 +53,10 @@ function update(answer) {
     currentNode = currentNode[answer];
     if (currentNode.question) {
 
-        textBox.innerHTML += "<p>"+currentNode.question+"</p>"
+        textBox.innerHTML = "<p>"+currentNode.question+"</p>"
 
     } else {
-        textBox.innerHTML += "<p>"  + currentNode.result + "</p>"
+        textBox.innerHTML = "<p>"  + currentNode.result + "</p>"
         yesButton.style.display = "none";
         noButton.style.display = "none";
     }
