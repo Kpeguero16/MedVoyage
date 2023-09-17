@@ -73,16 +73,17 @@ const diagnosisTree = {
         }
     }
 };
-    let currentNode = diagnosisTree;
-    
-    
-    
-    // const yesButton = document.getElementById("yes");
-    // const noButton = document.getElementById("no");
-    const textBox = document.getElementById("chatBox");
-    
-    
 
+
+let currentNode = diagnosisTree;
+const textBox = document.getElementById("chatBox");
+
+function reset()
+{
+    currentNode = diagnosisTree;
+    textBox.innerHTML = "<p> Have you been experiencing flu-like symptoms? </p>"
+}
+    
 
 function update(answer) {
     
@@ -92,9 +93,7 @@ function update(answer) {
         textBox.innerHTML = "<p>"+currentNode.question+"</p>"
 
     } else {
-        textBox.innerHTML = "<p>"  + currentNode.result + "</p>"
-        yesButton.style.display = "none";
-        noButton.style.display = "none";
+        textBox.innerHTML = "<p>"  + currentNode.result + "</p>" 
     }
 }
 
