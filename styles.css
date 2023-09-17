@@ -165,14 +165,14 @@ button:hover {
   margin-bottom:30px;
   margin: 20px;
   padding: 20px;
-  border-radius: 100px;
+border-radius: 100px;
   Font-size: 50px
 }
 #no{
   color: white;
   font-family:"Poppins", sans-serif; 
   font-weight: 700;
-  border-radius: 100px;
+border-radius: 100px;
   transition: all 0.3s ease 0s;
   margin: 10px;
   padding: 10px;
@@ -183,7 +183,7 @@ button:hover {
   color: white;
   font-family:"Poppins", sans-serif;
   font-weight: 700;
-  font-size:50px
+  font-size:50px;
   margin:10x;
   padding: 10px;
   transition: all 0.3s ease 0s;
