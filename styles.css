@@ -159,5 +159,9 @@ button:hover {
   padding: 10px;
   transition: all 0.3s ease 0s;
 }
-
+.border{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
 
