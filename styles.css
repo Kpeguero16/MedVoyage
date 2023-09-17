@@ -183,7 +183,7 @@ border-radius: 100px;
   color: white;
   font-family:"Poppins", sans-serif;
   font-weight: 700;
-  font-size:50px;
+  /* font-size:50px; */
   margin:10x;
   padding: 10px;
   transition: all 0.3s ease 0s;
