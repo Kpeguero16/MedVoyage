@@ -122,7 +122,7 @@ button {
   padding: 10px 25px;
   background-color:#000000;
   border: none;
-  border-radius: 50px;
+  border-radius: 100px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   font-style: color= #FFFFFF;
@@ -135,29 +135,60 @@ button:hover {
 .chatbot{
   position:relative;
   background: linear-gradient(#fff,#80D7E8);
-  padding: 500px;
+  padding: 400px;
   justify-content: center;
   align-items: center;
+
 }
 .chatbot h2{
   color:#5271ff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 700
+}
+#chatBox{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 20px;
+
 }
 
+#but{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin-bottom:30px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 100px;
+  Font-size: 50px
+}
 #no{
   color: white;
-  font-family:"Poppins", sans-serif;
+  font-family:"Poppins", sans-serif; 
   font-weight: 700;
+  border-radius: 100px;
   transition: all 0.3s ease 0s;
   margin: 10px;
   padding: 10px;
+  justify-content: center;
+  align-items: center;
 }
 #yes{
   color: white;
   font-family:"Poppins", sans-serif;
   font-weight: 700;
+  font-size:50px
   margin:10x;
   padding: 10px;
   transition: all 0.3s ease 0s;
+  justify-content: center;
+  align-items: center;
 }
 .border{
   border-style: solid;
