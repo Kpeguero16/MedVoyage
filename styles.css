@@ -126,19 +126,6 @@ button:hover {
   background-color: #5271ff;
   transform: scale(1.2);
 }
-.sec{
-  position:relative;
-  padding: 200px;
-  background:#80D7E8;
-}
-.sec h2{
-  font-size:3.5em;
-  color:#fff
-}
-.sec p{
-  font-size:2.5em;
-  color:#fff
-}
 .chatbot{
   position: relative;
   width:100%;

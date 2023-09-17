@@ -1,5 +1,5 @@
 package diagnosis.diagnosis.src;
-import java.util.Scanner;
+import java.util.*;
 public class GERD extends Disease{
     private static final String[] gerdSymptoms = {"Chest Pain", "Cough", "Regurgitation"};
 
