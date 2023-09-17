@@ -46,7 +46,28 @@ const diagnosisTree = {
                     result: " You may have Celiac Disease. "
                 },
                 no: {
-                    
+                    result: " You may have a stomach bug. "
+                }
+            }
+        }, 
+        no: {
+            question: " Have you experienced any chest pain? ",
+            yes: {
+                question: " Have you experienced acid reflux? ",
+                yes: {
+                    result: " You may have GERD. "
+                },
+                no: {
+                    result: " Seek medical help. "
+                }
+            },
+            no: {
+                question: " Have you experienced any shortness of breath? ",
+                yes: {
+                    result: " You may have Angina. "
+                },
+                no: {
+                    result: " Seek medical help"
                 }
             }
         }
