@@ -159,9 +159,18 @@ button:hover {
   padding: 10px;
   transition: all 0.3s ease 0s;
 }
+
 .border{
   border-style: solid;
   border-color: black;
   border-width: 2px;
 }
-
+.Creators{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.snapshot{
+  height: 25px;
+  width: 25px;
+}
