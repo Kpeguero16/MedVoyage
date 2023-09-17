@@ -18,8 +18,8 @@
       <a href="#" class="logo"><img src="MedVoyage.png"></a>
       <ul>
         <li><a href="#">Homepage</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="#chatbot">Service</a></li>
+        <li><a href="#sec">About Us</a></li>
         <li><a href="#"><button id="contacts-btn">Contact Us</button></a></li>
       </ul>
     </header>
@@ -28,27 +28,19 @@
       <img src="sun.png" id="sun">
       <img src="layer.png" id="layer">
       <h2 id="text">Your Health, Our Expertise: Precision Diagnoses, Peace of Mind!</h2>
-      <a href="#sec" id="btn">Earn your peace of mind today</a>
+      <a href="#chatbot" id="btn">Earn your peace of mind today</a>
     </section>
-    <div class="sec" id="sec">
-        <h2>About Us</h2>
-        <p>At MedVoyage, we are dedicated to revolutionizing the way you approach
-                healthcare. Our mission is to empower individuals with the knowledge 
-               and insights they need to take control of their well-being. 
-               With a team of dedicated medical experts and cutting-edge technology, 
-               we provide accurate and reliable medicinal diagnoses right from the comfort of your home.</p>
-    </div>
-    <div id= "chatBox" class="textBox border">
-      <p> What are your symptoms?..." </p>
-      <br>
+    <div class="chatbot" id= "chatBox">
+      <h2> What are your symptoms?..." </h2>
       <p> Have you been experiencing flu-like symptoms? </p>
-      <p> Y / N </p>
-  </div>
-  <div>
-    <button id="no" onclick="update('no')">No</button>
-    <button id="yes" onclick="update('yes')">Yes</button>
-  </div>
-  <script src="script.js"></script>
+      <button id="no" onclick="update('no')">No</button>
+      <button id="yes" onclick="update('yes')">Yes</button>
+    </div>
+
+    
+
+  
+    <script src="script.js"></script>
     <script>
       let = document.getElementById('background');
       let sun = document.getElementById('sun');
