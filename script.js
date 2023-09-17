@@ -34,7 +34,22 @@ const diagnosisTree = {
         }
     },
     no: {
-        result: "Seek medical help."
+        question: " Have you experienced any gastrointestinal issues? ",
+        yes: {
+            question: " Have you consumed Dairy in the last 12 hours? ",
+            yes: {
+                result: "You may be Lactose Intolerant."
+            },
+            no: {
+                questions: " Have you consumed Grain products recently? ",
+                yes: {
+                    result: " You may have Celiac Disease. "
+                },
+                no: {
+                    
+                }
+            }
+        }
     }
 };
     let currentNode = diagnosisTree;
