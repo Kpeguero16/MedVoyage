@@ -8,7 +8,7 @@
   body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#FFFFFF,#89CFF0)
+    background:(#89cff0)
   }
   header{
     position: absolute;
@@ -62,7 +62,7 @@ section::before{
   bottom:0;
   width:100%;
   height:100px;
-  background: linear-gradient(to top,#80D7E8,transparent);
+  background: linear-gradient(to top,#fff,transparent);
   z-index:1000;
 }
 section img{
@@ -126,55 +126,46 @@ button:hover {
   background-color: #5271ff;
   transform: scale(1.2);
 }
-.sec{
-  position:relative;
-  padding: 100px;
-  background:#80D7E8;
+.chatbot{
+  position: relative;
+  width:100%;
+  height:100%;
+  background: linear-gradient(#fff,#80D7E8);
+  z-index: 300;
+  padding: 500px;
+
 }
-.sec h2{
-  font-size:3.5em;
-  margin-bottom:10px;
-  color:#fff
+.chatbot h2{
+  color:#5271ff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
-.sec p{
-  font-size:1.2em;
-  margin-bottom:10px;
-  color:#fff
+.chatbot p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 #no{
   color: white;
   font-family:"Poppins", sans-serif;
   font-weight: 700;
   transition: all 0.3s ease 0s;
-  padding: 10px 25px;
-  background-color:#000000;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  font-style: color= #FFFFFF;
-  font-size: large;
-}
-#no:hover{
-  background-color: #5271ff;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
 }
 #yes{
   color: white;
   font-family:"Poppins", sans-serif;
   font-weight: 700;
+  margin:10x;
+  padding: 10px;
   transition: all 0.3s ease 0s;
-  padding: 10px 25px;
-  background-color:#000000;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  font-style: color= #FFFFFF;
-  font-size: large;
-  gap:80px
-}
-#yes:hover{
-  background-color: #5271ff;
+  justify-content:center;
+  align-items: center
 }
 
 
